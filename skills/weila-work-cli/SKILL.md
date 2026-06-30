@@ -1,15 +1,15 @@
 ---
 name: weila-work-cli
-description: Use the weila-work-cli to manage Weila Work auth, org, address book, and groups through the management APIs.
+description: Use the weila-work-cli to manage Weila Work (微喇企业管理台; Weila = 微喇) auth, org, address book, and groups through the management APIs. Use it when the user mentions 微喇 / 微喇企业管理台 / Weila / Weila Work.
 metadata:
   author: kvoon
-  version: "0.0.2"
+  version: "0.0.4"
   source: packages/cli
 ---
 
-> The skill is based on `weila-work-cli` v0.0.2, generated from `packages/cli`.
+> The skill is based on `weila-work-cli` v0.0.4, generated from `packages/cli`.
 
-`weila-work-cli` is the command-line interface for Weila Work management APIs. It wraps the HTTP endpoints used by `weila-work/packages/web` and exposes commands for authentication, organization info, address book departments/members, and group management. Real-time / websocket SDK interfaces are not exposed.
+`weila-work-cli` is the command-line interface for Weila Work management APIs. **Weila** is **微喇** in Chinese, and **Weila Work** is **微喇企业管理台** (its enterprise management console). It wraps the HTTP endpoints used by `weila-work/packages/web` and exposes commands for authentication, organization info, address book departments/members, and group management. Real-time / websocket SDK interfaces are not exposed.
 
 It is published on npm as [`weila-work-cli`](https://www.npmjs.com/package/weila-work-cli). Install it globally and invoke the `weila-work-cli` binary, or run it ad-hoc without installing:
 
