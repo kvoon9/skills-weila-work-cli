@@ -40,6 +40,6 @@ weila-work-cli --help
 - Current published version is `0.0.2`.
 - When running from source, build first: `pnpm --filter weila-work-cli build`.
 - The CLI persists profile config and tokens under `~/.config/weila-work-cli/profiles/<profile>/`.
-- Most commands require a prior `auth:login` to obtain and store an access token.
+- Most commands require an access token; obtain it via `auth:login`, `auth:set-token`, or the per-command `--token` option.
 
 <!-- Source references: packages/cli/package.json, packages/cli/README.md -->

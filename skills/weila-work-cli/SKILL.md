@@ -22,7 +22,7 @@ weila-work-cli --help
 npx weila-work-cli --help
 ```
 
-Log in once before using the org/address/group commands; see [core-install](references/core-install.md) and [features-auth](references/features-auth.md) for details.
+Authenticate before using the org/address/group commands — via account/password (`auth:login`), a stored token (`auth:set-token`), or the per-command `--token` option; no method is preferred. See [core-install](references/core-install.md) and [features-auth](references/features-auth.md) for details.
 
 ## Core References
 

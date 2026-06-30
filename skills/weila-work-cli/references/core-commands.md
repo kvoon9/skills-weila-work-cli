@@ -17,6 +17,7 @@ weila-work-cli <command> [options]
   --base-url <url>   API base URL (default: https://voiswork.cn/v2)
   --app-id <id>      App ID
   --app-key <key>    App Key
+  --token <token>    Access token (in-memory auth, skips profile login)
   --json             Output raw JSON (default)
   --debug            Print debug information
 ```
@@ -30,6 +31,7 @@ Use `weila-work-cli --help` to show all commands. Use `weila-work-cli <command> 
 | Command | Purpose |
 |---------|---------|
 | `weila-work-cli auth:login` | Login with account and password |
+| `weila-work-cli auth:set-token` | Store an access token directly without logging in |
 | `weila-work-cli auth:whoami` | Get current user info |
 
 ### Org
@@ -84,6 +86,6 @@ Use `weila-work-cli --help` to show all commands. Use `weila-work-cli <command> 
 - Profile config and tokens are persisted under `~/.config/weila-work-cli/profiles/<profile>/`.
 - Commands that accept `--md5` skip automatic MD5 hashing of the provided password.
 - Boolean-like flags (`--is-dept-admin`, `--loc-share`, `--track`, `--burst-mode`) accept `true`, `false`, `0`, or `1`.
-- Login is required before other commands; `auth:login` stores the access token in the active profile.
+- Org/address/group commands require an access token; obtain it via `auth:login`, `auth:set-token`, or the per-command global `--token` option — any of the three works.
 
 <!-- Source references: packages/cli/src/cli.ts, packages/cli/src/commands/_shared.ts, packages/cli/src/commands/auth.ts, packages/cli/src/commands/org.ts, packages/cli/src/commands/address.ts, packages/cli/src/commands/group.ts -->
